@@ -1,0 +1,606 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Montana Resort &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,600i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+<<<<<<< HEAD
+		<nav class="fh5co-nav" role="navigation">
+			<!-- <div class="top-menu"> -->
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center logo-wrap">
+							<div id="fh5co-logo"><a href="{% url 'index' %}">Montana Resort<span>.</span></a></div>
+						</div>
+						<div class="col-xs-12 text-center menu-1 menu-wrap">
+							<ul>
+								<li class="active"><a href="{% url 'index' %}">Home</a></li>
+								<li><a href="{% url 'gallery' %}">Gallery</a></li>
+								<li><a href="{% url 'about' %}">About</a></li>
+								<li><a href="{% url 'menu' %}">Menu</a></li>
+								<li><a href="{% url 'reservation' %}">Booking</a></li>
+								<li><a href="{% url 'contact' %}">Contact</a></li>
+
+								{% if user.is_authenticated %}
+								<li  class="active"><a href="{% url 'signout_user' %}">{{user.username}}</a></li>
+								{% else %}
+								<li><a href="{% url 'signin_user' %}">Sign in</a></li>
+								<li><a href="{% url 'signup_user' %}">Sign Up</a></li>
+								{% endif %}
+							</ul>
+						</div>
+=======
+	<nav class="fh5co-nav" role="navigation">
+		<!-- <div class="top-menu"> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center logo-wrap">
+						<div id="fh5co-logo"><a href="index.html">Montana Resort<span>.</span></a></div>
+					</div>
+					<div class="col-xs-12 text-center menu-1 menu-wrap">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="reservation.html">Explore</a></li>
+							<li class="has-dropdown">
+								<a href="menu.html">Hotel Branches</a>
+									<ul class="dropdown">
+										<li>
+											<a href="#">Lahore</a>
+											<ul class="dropdown">
+												<li><a href="#">Gulberg III</a></li>
+												<li><a href="#">Iqbal Town</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Karachi</a></li>
+										<li><a href="#">Multan</a></li>
+										<li><a href="#">Peshawar</a></li>
+										<li><a href="#">Quetta</a></li>
+										<li><a href="#">Islamabad</a></li>
+									</ul>
+							</li>
+							<li class="has-dropdown">
+								<a href="menu.html">Rooms</a>
+									<!--<ul class="slider">
+										<li><a href="#">Available Rooms</a></li>
+										<li><a href="#">Booked Rooms</a></li>
+									</ul> -->
+							</li>
+							
+								<a href="gallery.html">Gallery</a>
+								
+							</li>
+							<li><a href="reservation.html">Reservation</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+>>>>>>> aebad852be2e87463ef7fb34d56d042c603f1f40
+					</div>
+					
+				</div>
+			<!-- </div> -->
+		</nav>
+	
+
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(static/images/3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<h1> Experience the Freedom </h1>
+							<h2>Unlock to enjoy the view of Montona Resort <a href="http://freehtml5.co/" target="_blank"></a></h2>
+										
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(static/images/12.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="display-t js-fullheight">
+						<div class="section-heading">
+							<h1>The Restaurant</h1>
+							<h3>Montana is a magnificent and responsive resort website template for building a nifty online presence. With the versatility of the web design, you can utilize Montana for nearly any accommodation business. From hotels and resorts to luxury villas and other vacation retreats, let Montana take care of the design part of your page. Due to the Bootstrap Framework, Montana smoothly reshapes to all and every device, ensuring a flawless experience.</h3>
+							<h3>Additional amenities of Montana are full-screen slider, drop-down menu, pop-up availability form, video support, social media icons and newsletter subscription form. There is also a blog section, an Instagram-ready feed, Google Maps and a functional contact form, all packed in stunning Montana. That said, get involved and take your business to new heights now. With a striking resort website template, you avoid starting from scratch, yet the outcome will be top-notch.</h3>
+							<h1><p><a href="#" class="btn btn-primary btn-outline">Our History</a></p><h1>
+							<p>In 1910, the HOTEL MONTANA, in a unique location on the hillside above the Palace Hotel, was opened by the enterprising hotelier Alfred Schrämli (1867-1932); son-in-law of the then owner of the Palace Hotel, Bucher-Durrer. This, however, took place shortly before the outbreak of the First World War, thus provoking a long and hard depression in the hotel business. At the same time, an electric funicular railway was also built. This, the shortest funicular railway in the world, in fact continues to bring guests from the lakeside promenade to the hotel lobby in just 60 seconds!<p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--<div id="fh5co-about" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-pull-4 img-wrap animate-box" data-animate-effect="fadeInLeft">
+					<img src="{% static 'images/room.jpg' %}" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+				</div>
+				<div class="col-md-5 col-md-push-1 animate-box">
+					<div class="section-heading">
+						<h1>The Restaurant</h1>
+						<p>Montana is a magnificent and responsive resort website template for building a nifty online presence. With the versatility of the web design, you can utilize Montana for nearly any accommodation business. From hotels and resorts to luxury villas and other vacation retreats, let Montana take care of the design part of your page. Due to the Bootstrap Framework, Montana smoothly reshapes to all and every device, ensuring a flawless experience.</p>
+						<p>Additional amenities of Montana are full-screen slider, drop-down menu, pop-up availability form, video support, social media icons and newsletter subscription form. There is also a blog section, an Instagram-ready feed, Google Maps and a functional contact form, all packed in stunning Montana. That said, get involved and take your business to new heights now. With a striking resort website template, you avoid starting from scratch, yet the outcome will be top-notch.</p>
+						<h1><p><a href="#" class="btn btn-primary btn-outline">Our History</a></p><h1>
+						<p> In 1910, the HOTEL MONTANA, in a unique location on the hillside above the Palace Hotel, was opened by the enterprising hotelier Alfred Schrämli (1867-1932); son-in-law of the then owner of the Palace Hotel, Bucher-Durrer. This, however, took place shortly before the outbreak of the First World War, thus provoking a long and hard depression in the hotel business. At the same time, an electric funicular railway was also built. This, the shortest funicular railway in the world, in fact continues to bring guests from the lakeside promenade to the hotel lobby in just 60 seconds!<p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap">
+		<div class="fh5co-item animate-box">
+			<img src="{% static 'images/4.jpg' %}" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+			<h3>Montana Resort Islamabad</h3>
+			<span class="fh5co-price"><sup></sup></span>
+			<p>Montana Resort, the inimitable hotel and residence carrying the vibe of the Old Town. Unique, romantic and generous. Whether your reason to travel is business, romance or vacation, we are definitely the most ideal choice to be made. We are located on the most popular promenade of the Old Town, on Nathigali street.</p>
+		</div>
+	</div>
+	
+	<div id="fh5co-featured-menu" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 fh5co-heading animate-box">
+					<h2>Today's Menu</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<p>One of the most difficult tasks of the day is to decide what to cook for dinner. It’s not as simple as what the family loves to eat, but also needs to take into consideration the grocery budget plus what is good for the house in the long-run. For instance, if the family loves meat, making a salan every single day would be a simple solution. But too much meat on a daily basis can be harmful, plus of course it will stretch the monthly budget.</p>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item">
+						<img src="{% static 'images/3.jpg' %}" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+						<h3>Montana Resort Lahore</h3>
+						<span class="fh5co-price"><sup></sup></span>
+						<p>Montana Resort & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Lahore an unforgettable holiday.</p>
+						<p>Esteemed guests are welcome to relax and unwind in a quiet and elegant setting in the popular resort of Lahore and enjoy a genuine experience of leisure, pleasure, gastronomy and wellness within the premises of the resort.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item margin_top">
+						<img src="{% static 'images/2.jpg' %}" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+						<h3>Montana Resort Karachi</h3>
+						<span class="fh5co-price"><sup></sup></span>
+						<p>In the heart of Karachi, Montana Hotel offers a comfortable stay in an elegant 19th century architecture. The hotel is close to Korangi and Malir. Location wise, Korangi and Murree are within walking distance. Stay at our Montana hotel and experience a special sojourn with quintessential American charm.</p>
+					</div>
+				</div>
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item">
+						<img src="{% static 'images/quetta.jpeg' %}" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+						<h3>Montana Resort Quetta</h3>
+						<span class="fh5co-price"><sup></sup></span>
+						<p>Unique 4-star Montana Resort with 175 designed rooms. The hotel is located in the city centre within 10 minutes walk from the Quetta Fort and the downtown shopping area. With great location, close to business centres and tourist attractions, this hotel will meet your expectations. Chill-out and bar area available for you to relax. Coffee and tea facilities in all rooms, Wi-Fi, fitness and Privilege lounge. Meals and drinks available 24/7.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+					<div class="fh5co-item margin_top">
+						<img src="{% static 'images/Multan.jpg' %}" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+						<h3>Montana Resort Multan</h3>
+						<span class="fh5co-price"><sup></sup></span>
+						<p>Montana welcomes you in a real cosmopolitan, pulsing milieu, at the same time offering peace and intimate retirement, just in the heart of the city centre. Timeless elegance tailored for the demands of our time; exceptional combination of magnificent architecture and divine cuisine, in perfect harmony. A Michelin-starred restaurant and a beautifully restored town palace joined forces for you!</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+					<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(static/images/ok1.jpeg);" data-stellar-background-ratio="0.5">
+						<div class="overlay"></div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									<div class="display-t js-fullheight">
+										<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+											{% for hotel in hotels %}			
+											<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
+												<div class="fh5co-item">
+													<h2>{{ hotel.name }}</h2>
+													<span class="fh5co-price"><sup></sup></span>
+													<h3>{{hotel.email}}</h3>
+													<h3>{{hotel.address}}</h3>
+													<h3>{{hotel.phonenumber}}</h3>
+
+												</div>
+											</div>
+											{% endfor %}
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+
+	
+
+	<div id="fh5co-featured-testimony" class="fh5co-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 fh5co-heading animate-box">
+					<h1>Testimony</h1>
+					<div class="row">
+						<div class="col-md-6">
+							<img src="{% static 'images/4.jpg' %}" class="img-responsive" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+							<p>Montana is a magnificent and responsive resort website template for building a nifty online presence. With the versatility of the web design, you can utilize Montana for nearly any accommodation business. From hotels and resorts to luxury villas and other vacation retreats, let Montana take care of the design part of your page. Due to the Bootstrap Framework, Montana smoothly reshapes to all and every device, ensuring a flawless experience.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
+						<img src="{% static 'images/quetta.jpeg' %}" alt="">
+				</div>
+				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
+					<blockquote>
+						<p> &ldquo;  Montana welcomes you in a real cosmopolitan, pulsing milieu, at the same time offering peace and intimate retirement, just in the heart of the city centre. Timeless elegance tailored for the demands of our time; exceptional combination of magnificent architecture and divine cuisine, in perfect harmony. A Michelin-starred restaurant and a beautifully restored town palace joined forces for you! &rdquo;</p>
+						<p class="author"><cite>&mdash; Jane Smith</cite></p>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="fh5co-slider" class="fh5co-section animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="fh5co-heading">
+						<h2>Our Best <em>&amp;</em> Unique Menu</h2>
+						<p>Montana Resort & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Lahore an unforgettable holiday.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-md-push-1 animate-box">
+					<aside id="fh5co-slider-wrwap">
+					<div class="flexslider">
+						<ul class="slides">
+					   	<li style="background-image: url(static/images/boti.jpg);">
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+						   				<div class="slider-text-inner">
+						   					<div class="desc">
+													<h2>Chicken Boti</h2>
+													<p>Chicken Boti Kabab is an Indian Chicken Kabab recipe that is made with marinated boneless pieces of chicken that are skewered & cooked until just tender & juicy. You can make Chicken Boti Kabab on a griddle or Tawa, in an oven, air fryer or grill.</p>
+													<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+						   					</div>
+						   				</div>y
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>
+						   <li style="background-image: url(static/images/malai.jpg);">
+							<div class="overlay-gradient"></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+										<div class="slider-text-inner">
+											<div class="desc">
+												 <h2>Chicken Malaai Boti</h2>
+												 <p>Malai Chicken Boti is a grilled chicken dish, which is extremely creamy in taste. It has cream cheese, heavy cream, yogurt, and a lot of spices. You can make this recipe easily in the comfort of your home. All you need is chicken, some spices, and an oven.</p>
+												 <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+											</div>
+										</div>y
+									</div>
+								</div>
+							</div>
+						</li>
+					</li>
+					<li style="background-image: url(static/images/biryani.jpg);">
+					 <div class="overlay-gradient"></div>
+					 <div class="container-fluid">
+						 <div class="row">
+							 <div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+								 <div class="slider-text-inner">
+									 <div class="desc">
+										  <h2>Chicken Biryani</h2>
+										  <p>Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. The bottom layer of rice absorbs all the chicken juices as it cooks, giving it a tender texture and rich flavor, while the top layer of rice turns out white and fluffy.</p>
+										  <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+									 </div>
+								 </div>y
+							 </div>
+						 </div>
+					 </div>
+				 	</li>
+					 <li style="background-image: url(static/images/beef.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+									<div class="slider-text-inner">
+										<div class="desc">
+											 <h2>Beef Biryani</h2>
+											 <p>Biryani is a popular layered rice and meat dish that's loved across all over India and Pakistan. What is this? Report Ad. Biryani has two main components: fluffy, fragrant basmati rice and a delicious saucy beef (or your choice of protein) curry or masala. AND, it's super delicious.</p>
+											 <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+										</div>
+									</div>y
+								</div>
+							</div>
+						</div>
+						</li>
+					   	<li style="background-image: url(static/images/roast.jpg);">
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+						   				<div class="slider-text-inner">
+						   					<div class="desc">
+													<h2>Tuna <em>&amp;</em> Roast Beef</h2>
+													<p>Mixing tuna, mayo and beef is a classic of Italian cuisine, often served as a starter or as a buffet dish. This version is served in a panini, for easy transport!</p>
+													<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+						   					</div>
+						   				</div>
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>
+					   	<li style="background-image: url(static/images/egg.jpg);">
+					   		<div class="overlay-gradient"></div>
+					   		<div class="container-fluid">
+					   			<div class="row">
+						   			<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+						   				<div class="slider-text-inner">
+						   					<div class="desc">
+													<h2>Egg <em>with</em> Mushroom</h2>
+													<p>Scrambled eggs with mushrooms is my favorite breakfast meal which is a scrambled egg mixed with mushrooms and onions. It is one of the simplest breakfast recipe to make while in the house. Furthermore, it is perfect to eat with toast bread, tortilla or even pancake.</p>
+													<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+						   					</div>
+						   				</div>
+						   			</div>
+						   		</div>
+					   		</div>
+					   	</li>
+						   <li style="background-image: url(static/images/chinese.jpg);">
+							<div class="overlay-gradient"></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+										<div class="slider-text-inner">
+											<div class="desc">
+												 <h2>Chinese Food</h2>
+												 <p>This huge undertaking of 12 collaborative projects resulted in the release of 49 rice varieties in China since 1999 -- each with potential for higher yields. IRRI's engagement with China helped the country become a world leader in hybrid rice, which can yield 15-20% more than other rice.</p>
+												 <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+											</div>
+										</div>y
+									</div>
+								</div>
+							</div>
+							</li>		   	
+					  	</ul>
+				  	</div>
+				</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-blog" class="fh5co-section">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Events</h2>
+					<p>Montana Resort & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Lahore an unforgettable holiday.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(static/images/22.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Feb. 15th 2016</span>
+							<h3><a href="#">Photoshoot On The Street</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>1.2K</li>
+								<li><i class="icon-eye2"></i>2K</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(static/images/33.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Feb. 15th 2016</span>
+							<h3><a href="#">Surfing at Philippines</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>1.2K</li>
+								<li><i class="icon-eye2"></i>2K</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(static/images/11.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Feb. 15th 2016</span>
+							<h3><a href="#">Focus On Uderwater</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>1.2K</li>
+								<li><i class="icon-eye2"></i>2K</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(static/images/haha.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Book a Table</h2>
+					<p>Montana Resort is open Wednesday to Sunday, with brunch on weekends.
+
+						Customary to the Bagatelle way, the entire team will be on hand to offer an unforgettable experience to first-time and returning guests, whilst fully observing updated health and safety protocols.</p>
+					<p><a href="reservation.html" class="btn btn-primary btn-outline">Book Now</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<h4>Montana Resort</h4>
+					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+				</div>
+				<div class="col-md-2 col-md-push-1 fh5co-widget">
+					<h4>Links</h4>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Gallery</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-md-push-1 fh5co-widget">
+					<h4>Categories</h4>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Landing Page</a></li>
+						<li><a href="#">Real Estate</a></li>
+						<li><a href="#">Personal</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">e-Commerce</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 col-md-push-1 fh5co-widget">
+					<h4>Contact Information</h4>
+					<ul class="fh5co-footer-links">
+						<li>Tipu Road <br> Gulberg III, Lahore, Pakistan</li>
+						<li><a href="tel://1234567920">+ 923144980703</a></li>
+						<li><a href="mailto:info@yoursite.com">montana@resort.com</a></li>
+						<li><a href="http://https://freehtml5.co">montanaresortco</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter2"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+
